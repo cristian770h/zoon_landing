@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      injectRegister: 'auto',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'vite.svg'],
       manifest: {
         name: 'Zoon Game',
@@ -51,9 +52,6 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,jpeg}'],
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024, // 6mb
-      },
-      devOptions: {
-        enabled: true
       }
     })
   ],
