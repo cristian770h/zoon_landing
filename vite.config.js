@@ -31,6 +31,21 @@ export default defineConfig({
             type: 'image/png',
             purpose: 'any maskable',
           }
+        ],
+        screenshots: [
+          {
+            src: '/icons/mapa1.jpeg',
+            sizes: '1280x720',
+            type: 'image/jpeg',
+            form_factor: 'wide',
+            label: 'Mapa del Juego'
+          },
+          {
+            src: '/icons/iniciojuego.jpeg',
+            sizes: '1280x720',
+            type: 'image/jpeg',
+            label: 'Inicio del Juego'
+          }
         ]
       },
       workbox: {
