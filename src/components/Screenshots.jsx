@@ -1,9 +1,9 @@
-import menu from "../../public/icons/menu.jpeg";
-import mapa1 from "../../public/icons/mapa1.jpeg";
-import mapa2 from "../../public/icons/mapa2.jpeg";
-import iniciojuego from "../../public/icons/iniciojuego.jpeg";
-
-const images = [menu, mapa1, mapa2, iniciojuego];
+const images = [
+  "/icons/menu.png",
+  "/icons/mapa1.jpeg",
+  "/icons/mapa2.jpeg",
+  "/icons/iniciojuego.jpeg",
+];
 
 export default function Screenshots() {
   return (
