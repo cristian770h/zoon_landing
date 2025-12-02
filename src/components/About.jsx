@@ -41,7 +41,7 @@ export default function About() {
             >
               <div className="relative rounded-3xl overflow-hidden bg-black/40 backdrop-blur-sm">
                 <img
-                  src="public/icons/vs.png"
+                  src="/icons/vs.png"
                   alt="Concept art - Protagonista vs Espía"
                   className="rounded-3xl w-full h-full object-cover 
                   scale-[1.02] hover:scale-105 transition-transform duration-500"
