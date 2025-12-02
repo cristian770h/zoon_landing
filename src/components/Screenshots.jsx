@@ -1,4 +1,9 @@
-const images = ["src/assets/menu.png", "src/assets/mapa1.jpeg", "src/assets/mapa2.jpeg", "src/assets/iniciojuego.jpeg"];
+import menu from "../../public/icons/menu.jpeg";
+import mapa1 from "../../public/icons/mapa1.jpeg";
+import mapa2 from "../../public/icons/mapa2.jpeg";
+import iniciojuego from "../../public/icons/iniciojuego.jpeg";
+
+const images = [menu, mapa1, mapa2, iniciojuego];
 
 export default function Screenshots() {
   return (
