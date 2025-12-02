@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos base: Fondo oscuro y fuentes */
+body {
+  @apply bg-[#0D1117] text-gray-200 font-inter; /* Fondo y texto principal */
+}
+
+h1, h2, h3 {
+  @apply font-electrolize; /* Fuente futurista para títulos */
+}
+
+/* Efectos de neón personalizados */
+.text-neon-cyan {
+  color: #ea22bb;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.7), 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.text-neon-scarlet {
+  color: #00FFFF;
+  text-shadow: 0 0 5px rgba(14, 223, 255, 0.7), 0 0 10px rgba(14, 223, 255, 0.7);
+}
+
+.border-neon-cyan {
+  border-color: #00FFFF;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}
+.border-neon-scarlet {
+  border-color: #ff00c3;
+  box-shadow: 0 0 8px rgba(255, 0, 195, 0.951);
+}
+
+/* Animaciones */
+@keyframes zoom-slow {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  .animate-zoom-slow {
+    animation: zoom-slow 20s ease-in-out infinite;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fade-in 1s ease forwards;
+  }
+  .animate-fade-in-delay {
+    animation: fade-in 1.5s ease forwards;
+  }
+  
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up {
+    animation: fade-up 1.2s ease forwards;
+  }
+  .animate-fade-up-delay {
+    animation: fade-up 2s ease forwards;
+  }
+  
+  /* Animación de pulso para CTA */
+  @keyframes pulse-neon {
+    0% { box-shadow: 0 0 0px rgb(244, 8, 130); }
+    50% { box-shadow: 0 0 15px rgba(244, 35, 143, 0.939), 0 0 25px rgb(238, 24, 135); }
+    100% { box-shadow: 0 0 0px rgba(232, 35, 137, 0.899); }
+  }
+  .animate-pulse-neon {
+    animation: pulse-neon 2s infinite ease-in-out;
+  }
+
+  /* Animación de GLOW mejorada para el título principal */
+  @keyframes glow {
+    0%, 100% { 
+        text-shadow: 0 0 10px #ea22bb, 0 0 20px #ea22bb; 
+    }
+    50% { 
+        text-shadow: 0 0 30px #ea22bb, 0 0 40px #ea22bb; 
+    }
+  }
+  .animate-glow {
+    animation: glow 3s infinite alternate;
+  }
+
+  .jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
